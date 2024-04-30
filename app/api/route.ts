@@ -1,7 +1,10 @@
+
+
 // app/api/route.ts
 
 /** Webhook from Typeform. */
 export async function POST(request: Request) {
+  // process.env.CLIENT_SECRET;
   try {
     const text = await request.text();
     console.log("Received webhook data:", text);

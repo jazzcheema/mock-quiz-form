@@ -3,7 +3,7 @@ import { Widget } from '@typeform/embed-react';
 
 
 const FormWidget = () => {
-    return <Widget id="vBOEFE8R" style={{ width: '100vw', height: '100vh'}} className="my-form" />;
+    return <Widget id="vBOEFE8R" className="fixed inset-0 overflow-auto bg-white" />;
 };
 
 export default FormWidget;

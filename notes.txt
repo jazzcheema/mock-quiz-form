@@ -1,1 +1,11 @@
 BASE_URL = https://api.typeform.com/
+
+TODO's:
+
+- TypeForm:
+    - capitalization, grammar, general wording
+    - end slide (button for user to create new form?)
+    - account tiers... branding in bottom right corner non-professional
+
+- Tailwind
+    - style guide (currently following Jon's typeForm color scheme) 
