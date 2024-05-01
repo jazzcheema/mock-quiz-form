@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 154, 205, 247;
@@ -32,18 +31,34 @@
 body {
   color: rgb(var(--foreground-rgb));
   font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    ) rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
-
-
-
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.1);
+    opacity: 0.5;
+  }
+}
+
+.pulse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: pulse 11s infinite ease-in-out;
 }

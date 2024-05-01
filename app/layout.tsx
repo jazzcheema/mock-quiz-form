@@ -4,7 +4,7 @@ import "./globals.css";
 
 
 const inter = Inter({ subsets: ["latin"] });
-const mono = Roboto_Mono({subsets:["latin"], weight:["400"]})
+const mono = Roboto_Mono({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",

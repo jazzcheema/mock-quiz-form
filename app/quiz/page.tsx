@@ -1,10 +1,16 @@
-import FormWidget from "@/components/TypeForm-Widget";
+import FormWidget from "@/components/TypeformWidget";
 
+/** Quiz:  Component for rendering the Quiz page.
+ *
+ * Quiz -> FormWidget
+ */
 
-export default function Quiz() {
+function Quiz() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        <FormWidget />
+      <FormWidget />
     </main>
   );
 }
+
+export default Quiz;

@@ -13,7 +13,8 @@ const config: Config = {
       black: "#000000",
       beige: "#f5f5dc",
       "off-white": "#f8f8f8",
-      "custom-blue": "154, 205, 247",
+      "custom-blue": "#9ACDF7",
+      "custom-blue-light": "#ADD8FA",
     },
     extend: {
       backgroundImage: {
