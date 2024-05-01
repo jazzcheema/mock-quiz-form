@@ -1,11 +1,10 @@
 /**
  * Webhook endpoint for receiving data from Typeform.
  *
- * @param {Request} request - The incoming request containing webhook data.
- * @returns {Promise<Response>} A response indicating the status of the webhook processing.
+ *
  */
 
-async function POST(request: Request) {
+export async function POST(request: Request) {
   try {
     const text = await request.text();
     console.log("Received webhook data:", text);
@@ -21,5 +20,3 @@ async function POST(request: Request) {
     });
   }
 }
-
-export default POST;

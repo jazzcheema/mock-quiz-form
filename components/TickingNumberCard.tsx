@@ -8,23 +8,32 @@ import SleekCard from "./SleekCard";
  *
  * state: Count (#)
  *
- * props: None
+ * props: color1(string), color2(string)
  *
  * Home -> TickingNumberCard -> SleekCard
  */
 
-const TickingNumberCard: React.FC = () => {
+interface TickingNumberCardProps {
+  color1: string;
+  color2: string;
+}
+
+const TickingNumberCard: React.FC<TickingNumberCardProps> = ({
+  color1,
+  color2,
+}) => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    const timer =
-      count < 5
-        ? setInterval(() => {
-            setCount((prevCount) => prevCount + 1);
-          }, 300)
-        : null; // Increment every second
+    const timer: number = window.setInterval(() => {
+      if (count < 5) {
+        setCount(prevCount => prevCount + 1);
+      } else {
+        clearInterval(timer);
+      }
+    }, 800);
 
-    return () => clearInterval(timer); // Clear interval on component unmount
+    return () => clearInterval(timer);
   }, [count]);
 
   return (
@@ -32,13 +41,13 @@ const TickingNumberCard: React.FC = () => {
       <SleekCard
         title={`${count < 5 ? count : "5+"} years`}
         description="empowering buyers."
-        color="custom-blue-light"
+        color={color1}
       />
       <SleekCard
-       title={`10 minutes`}
-       description="to complete the application!"
-       color="custom-blue-light"
-     />
+        title={`10 minutes`}
+        description="to complete the application!"
+        color={color2}
+      />
     </div>
   );
 };

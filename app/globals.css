@@ -42,14 +42,12 @@ body {
   }
 }
 
+/* Pulse effect for title on landing page. */
 @keyframes pulse {
-
-  0%,
-  100% {
+  0%, 100% {
     transform: scale(1);
     opacity: 1;
   }
-
   50% {
     transform: scale(1.1);
     opacity: 0.5;
@@ -61,4 +59,56 @@ body {
   justify-content: center;
   align-items: center;
   animation: pulse 11s infinite ease-in-out;
+}
+
+.pulse h1 {
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5); /* Example shadow */
+}
+
+
+
+/* Bounce effect for button on landing page. */
+@keyframes floatBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+.float-bounce {
+  animation-name: floatBounce;
+  animation-duration: var(--tw-animation-duration-3000, 3000ms);
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+/* Typing effect for description on landing page. */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.typewriter {
+  overflow: hidden; /* Ensures the content is clipped */
+  border-right: 0.15em solid orange; /* The cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  letter-spacing: 0.15em; /* Adjusts the spacing between letters */
+  animation:
+    typing 3.5s steps(40, end),
+    fadeIn 0.5s ease-in 3.5s forwards; /* Runs both animations */
 }
