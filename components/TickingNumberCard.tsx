@@ -8,19 +8,18 @@ import SleekCard from "./SleekCard";
  *
  * state: Count (#)
  *
- * props: color1(string), color2(string)
+ * props: color(string)
  *
  * Home -> TickingNumberCard -> SleekCard
  */
 
 interface TickingNumberCardProps {
-  color1: string;
-  color2: string;
+  color: string;
+
 }
 
 const TickingNumberCard: React.FC<TickingNumberCardProps> = ({
-  color1,
-  color2,
+  color,
 }) => {
   const [count, setCount] = useState(0);
 
@@ -41,12 +40,7 @@ const TickingNumberCard: React.FC<TickingNumberCardProps> = ({
       <SleekCard
         title={`${count < 5 ? count : "5+"} years`}
         description="empowering buyers."
-        color={color1}
-      />
-      <SleekCard
-        title={`10 minutes`}
-        description="to complete the application!"
-        color={color2}
+        color={color}
       />
     </div>
   );
