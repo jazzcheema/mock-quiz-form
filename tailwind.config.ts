@@ -16,10 +16,10 @@ const config: Config = {
       "custom-blue": "#9ACDF7",
       "custom-blue-light": "#ADD8FA",
       'pale-blue': '#89CFF0',
-        'light-gray': '#E0E0E0',
-        'dark-gray': '#303030',
-        'subtle-yellow-green': '#B4D69E',
-        'stem-green': '#3CB371',
+      'light-gray': '#E0E0E0',
+      'dark-gray': '#303030',
+      'subtle-yellow-green': '#B4D69E',
+      'stem-green': '#3CB371',
     },
     extend: {
       backgroundImage: {

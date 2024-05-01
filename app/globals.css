@@ -5,15 +5,16 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 154, 205, 247;
-  --background-end-rgb: 154, 205, 247;
-  --white-rgb: 255, 255, 255;
+  --background-start-rgb: 60, 179, 113;
+  --background-end-rgb: 229, 229, 229;
+  /* --background-end-rgb: 234, 229, 217; */
+  /* --white-rgb: 255, 255, 255;
   --gray-rgb: 102, 102, 102;
   --black-rgb: 0, 0, 0;
   --beige-rgb: 245, 245, 220;
-  --off-white-rgb: 248, 248, 248;
+  --off-white-rgb: 248, 248, 248; */
 }
-
+/*
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -26,14 +27,15 @@
     --off-white-rgb: 248, 248, 248;
     --blue-rgb: 154, 205, 247;
   }
-}
+} */
 
 body {
   color: rgb(var(--foreground-rgb));
   font-family: Arial, Helvetica, sans-serif;
   background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+      /* rgba(var(--background-start-rgb), 0.5), */
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb), 0.3);
 }
 
 @layer utilities {
@@ -105,7 +107,7 @@ body {
 
 .typewriter {
   overflow: hidden; /* Ensures the content is clipped */
-  border-right: 0.15em solid orange; /* The cursor */
+  border-right: 0.15em solid #3CB371; /* The cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   letter-spacing: 0.15em; /* Adjusts the spacing between letters */
   animation:

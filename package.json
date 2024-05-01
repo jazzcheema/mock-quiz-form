@@ -14,10 +14,7 @@
     "grommet-icons": "^4.12.1",
     "next": "14.2.3",
     "react": "^18",
-    "react-dom": "^18",
-    "react-tsparticles": "^2.12.2",
-    "styled-components": "^6.1.9",
-    "tsparticles": "^3.3.0"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -30,3 +27,5 @@
     "typescript": "^5"
   }
 }
+
+

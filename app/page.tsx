@@ -38,7 +38,7 @@ function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between px-8 py-20 max-w-4xl mx-auto">
       <div className="pulse text-center justify-between mx-auto">
-        <h1 className="text-8xl">OfferHaus</h1>
+        <h1 className="text-8xl">The Offer Haus</h1>
       </div>
       <div className="flex mx-auto items-center flex-col gap-8">
         <h3 className="text-xl typewriter">
@@ -80,7 +80,7 @@ function Home() {
         />
       </div>
       {/* bottom div in place for inputting custom colors below to connect them. */}
-      {/* <div className="bg-subtle-yellow-green p-4 rounded-lg shadow-md"></div> */}
+      {/* <div className="bg-stem-green p-4 rounded-lg shadow-md"></div> */}
 
       <footer className="w-full bg-gray-100 text-center text-xs text-gray-600">
         © 2024 OfferHaus. All rights reserved.
